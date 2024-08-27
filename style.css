@@ -38,10 +38,19 @@ body {
     align-items: center;
     text-align: center;
     border-radius: 32px;
+    font-family: "Inter", sans-serif;
 }
 
 .texto_no_encontrado{
     width: 280px;
+}
+
+.indicaciones {
+    font-size: 11px;
+}
+
+.alerta {
+    width: 10px;
 }
 
 .header__logo {
@@ -55,7 +64,39 @@ body {
 
 .caja__texto {
     width: 500px;
-    height: 300px;
+    height: 350px;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #0A3871;
+    border: none;
+    background-color: #F3F5FC;
+    resize: none;
+}
+
+button {
+    border-radius: 24px;
+    width: 243px;
+    height: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.contenido__botones {
+    display: flex;
+    justify-content: around;
+    gap: 15px;
+}
+
+.boton__encriptar {
+    background-color: #0A3871;
+    color: #f6f6f6;
+    border-color: 0A3871;
+}
+
+.boton__desencriptar, .boton__copy {
+    background-color: #f6f6f6;
+    color:  #0A3871;
+    border-color: 0A3871;
 }
 
 .footer {
