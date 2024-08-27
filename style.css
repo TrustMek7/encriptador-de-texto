@@ -1,12 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F5FC;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.contenido__entrada{
+    padding: 150px 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.contenido__salida {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background-color: white;
+    padding: 50px 10px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.texto_no_encontrado{
+    width: 280px;
+}
+
 .header__logo {
-    padding: 30px;
+    padding: 40px 0 80px;
     width: 80px;
     height: 80px;
     object-fit: contain;
+    justify-content:  left;
     gap: 20 px;
+}
+
+.caja__texto {
+    width: 500px;
+    height: 300px;
+}
+
+.footer {
+    background-color: #5c719e;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
