@@ -27,7 +27,7 @@ body {
 .contenido__salida {
     margin-top: 50px;
     margin-bottom: 120px;
-    width: 400px;
+    width: 300px;
     height: 450px;
     background-color: white;
     padding: 50px 10px;
@@ -39,6 +39,15 @@ body {
     text-align: center;
     border-radius: 32px;
     font-family: "Inter", sans-serif;
+}
+
+.msj_titulo {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.msj_cuerpo{
+    font-size: 14px;
 }
 
 .texto_no_encontrado{
@@ -106,4 +115,84 @@ button {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+/* Estilos para Tablet */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo {
+        align-self: flex-start;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .caja__texto {
+        width: 80%;
+        height: 250px;
+    }
+
+    .contenido__botones {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .contenido__salida {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        width: 80%;
+        height: auto;
+        padding: 30px;
+        /* Quitar la imagen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto_no_encontrado {
+        display: none; /* Ocultamos la imagen */
+    }
+}
+
+/* Estilos para Celular */
+@media (max-width: 480px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__logo {
+        align-self: flex-start;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caja__texto {
+        width: 90%;
+        height: 200px;
+    }
+
+    .contenido__botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenido__salida {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        /* Quitar la imagen */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto_no_encontrado {
+        display: none; /* Ocultamos la imagen */
+    }
 }
