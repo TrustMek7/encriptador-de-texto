@@ -27,6 +27,8 @@ body {
 .contenido__salida {
     margin-top: 50px;
     margin-bottom: 120px;
+    width: 400px;
+    height: 450px;
     background-color: white;
     padding: 50px 10px;
     gap: 15px;

@@ -33,7 +33,13 @@ function desencriptarTexto() {
 // Función para mandar el mensaje después de la modificación (Encriptar o desencriptar)
 function mostrarResultado(mensaje) {
     let outputMensaje = document.getElementById("mensaje__salida");
-    outputMensaje.innerHTML = "<p>" + mensaje + "</p>"; 
+    outputMensaje.innerHTML = "<p>" + mensaje + "</p>";
+
+    // Ocultar la imagen cuando se muestra el resultado
+    let imagen = document.querySelector(".texto_no_encontrado");
+    if (imagen) {
+        imagen.style.display = "none";
+    }
 }
 
 // Función para mostrar el botón después de encriptar texto
