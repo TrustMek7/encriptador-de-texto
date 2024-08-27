@@ -9,6 +9,9 @@ function encriptarTexto() {
 
     mostrarResultado(textoEncriptado); // Mandamos el texto cuando las vocales ya fueron reemplazadas
     mostrarBotonCopiar(); // Mostramos el boton para copiar el texto
+
+     // Cambia el justify-content a 'space-between' cuando se encripte el texto
+     document.querySelector(".contenido__salida").style.justifyContent = "space-between";
 }
 
 // Usamos la lógica inversa del encriptador
@@ -25,6 +28,10 @@ function desencriptarTexto() {
 
         mostrarResultado(textoDesencriptado);
         ocultarBotonCopiar(); // Ocultamos el botón al desencriptar
+
+        // Remueve el justify-content después de desencriptar el texto
+        document.querySelector(".contenido__salida").style.justifyContent = "";
+        
     } else {
         alert("Por favor, ingrese un texto encriptado válido."); //Mandamos un mensaje de alerta porque el texto no es el encriptado
     }
